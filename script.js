@@ -1,3 +1,5 @@
 $(document).ready(function(){
-   // alert(" the page has been loaded");
+   $("#searchInput").on("keyup", function(){
+        console.log("the  key has  been pressed");
+   });
 });
