@@ -7,7 +7,7 @@ $(document).ready(function(){
       //make a request to the server
 
       $.ajax({ 
-
+            url: `http://api.openweathermap.org/data/2.5/weather?q=${cityname}&appid=${APIKey}`,
 
          
       });
