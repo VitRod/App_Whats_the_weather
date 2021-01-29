@@ -10,7 +10,9 @@ $(document).ready(function(){
             url: `http://api.openweathermap.org/data/2.5/weather?q=${cityname}&appid=${APIKey}`,
  
       }).done(function(weatherdata){    // добавляем обработчик при успешном выполнении запроса
-            console.log(weatherdata);
+            
+         $("#profile").html(weatherdata.weather[0].description);
+        
       });
 
 
